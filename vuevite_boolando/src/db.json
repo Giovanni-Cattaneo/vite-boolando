@@ -1,0 +1,64 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "brand": "Levis",
+            "model": "RELAXED FEET TEE UNISEX",
+            "price": 14.99,
+            "altPrice": 7.50,
+            "image": "../public/1.webp",
+            "altImage": "../public/1b.webp",
+            "originalImage": "../public/1.webp"
+        },
+        {
+            "id": 2,
+            "brand": "Levis",
+            "model": "RELAXED FEET TEE UNISEX",
+            "price": 14.99,
+            "altPrice": 7,
+            "image": "../public/2.webp",
+            "altImage": "../public/2b.webp",
+            "originalImage": "../public/2.webp"
+        },
+        {
+            "id": 3,
+            "brand": "Levis",
+            "model": "RELAXED FEET TEE UNISEX",
+            "price": 14.99,
+            "altPrice": 7,
+            "image": "../public/3.webp",
+            "altImage": "../public/3b.webp",
+            "originalImage": "../public/3.webp"
+        },
+        {
+            "id": 4,
+            "brand": "Levis",
+            "model": "RELAXED FEET TEE UNISEX",
+            "price": 14.99,
+            "altPrice": 7,
+            "image": "../public/4.webp",
+            "altImage": "../public/4b.webp",
+            "originalImage": "../public/4.webp"
+        },
+        {
+            "id": 5,
+            "brand": "Levis",
+            "model": "RELAXED FEET TEE UNISEX",
+            "price": 14.99,
+            "altPrice": 7,
+            "image": "../public/5.webp",
+            "altImage": "../public/5b.webp",
+            "originalImage": "../public/5.webp"
+        },
+        {
+            "id": 6,
+            "brand": "Levis",
+            "model": "RELAXED FEET TEE UNISEX",
+            "price": 14.99,
+            "altPrice": 7,
+            "image": "../public/6.webp",
+            "altImage": "../public/6b.webp",
+            "originalImage": "../public/6.webp"
+        }
+    ]
+}
