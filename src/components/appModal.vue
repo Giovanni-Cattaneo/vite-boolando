@@ -18,7 +18,7 @@ export default {
             <h4>Ecco i dettagli del prodotto</h4>
         </div>
         <div class="modal_body">
-            <p>{{ product.model }}</p>
+            <p>{{ product.model[index] }}</p>
         </div>
 
     </div>
