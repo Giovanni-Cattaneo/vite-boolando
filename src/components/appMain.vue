@@ -1,11 +1,13 @@
 <script>
 import appCard from "./appCard.vue";
 import { state } from "../state.js"
+import appModal from "./appModal.vue";
 
 export default {
     name: 'appMain', // main è un componente che contiene un componente, apporofondire!
     components: {
-        appCard
+        appCard,
+        appModal
     },
     data() {
         return {
@@ -21,6 +23,9 @@ export default {
                 state.products[index].image = state.products[index].originalImage
             }
         },
+        showModal() {
+            console.log("Hello world")
+        }
 
     },
     mounted() {
@@ -36,9 +41,10 @@ export default {
             <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="(product, index) in state.products" :key="index">
                 <appCard :brand="product.brand" :image="product.image" :price="product.price" :model="product.model"
                     :altImage="product.altImage" :originalImage="product.originalImage" :altPrice="product.altPrice"
-                    :index="index" @changeImage="updateImage(index)" />
+                    :index="index" @changeImage="updateImage(index)" @showModal="showModal()" />
                 <!-- Usiamo le props con product.props, ora con state da rimuovere, TODO! -->
             </div>
+            <appModal />
         </div>
     </div>
 </template>
