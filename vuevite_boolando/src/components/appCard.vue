@@ -24,6 +24,7 @@ export default {
         <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage')">
         <div class="card-body">
             <div class="heart">&hearts;</div>
+            <!-- TODO per discount e sustenability cercare di usare il v-for -->
             <div class="discount">50%</div>
             <div class="sustainability">Sostenibilità</div>
             <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
