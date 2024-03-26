@@ -3,7 +3,7 @@ import appCard from "./appCard.vue";
 import { state } from "../state.js"
 
 export default {
-    name: 'appMain',
+    name: 'appMain', // main è un componente che contiene un componente, apporofondire!
     components: {
         appCard
     },
@@ -14,7 +14,7 @@ export default {
         }
     },
     methods: {
-        updateImage(index) {
+        updateImage(index) { //usiamo l'immagine originale ocme backup di ritorno cosi da cambiare le immagini all'infinito se necessario
             if (state.products[index].image === state.products[index].originalImage) {
                 state.products[index].image = state.products[index].altImage;
             } else {
@@ -24,7 +24,7 @@ export default {
 
     },
     mounted() {
-        state.callApi()
+        state.callApi() //facciamo la chiamata api al caricmaneto della pagina
     }
 
 }
@@ -37,6 +37,7 @@ export default {
                 <appCard :brand="product.brand" :image="product.image" :price="product.price" :model="product.model"
                     :altImage="product.altImage" :originalImage="product.originalImage" :altPrice="product.altPrice"
                     :index="index" @changeImage="updateImage(index)" />
+                <!-- Usiamo le props con product.props, ora con state da rimuovere, TODO! -->
             </div>
         </div>
     </div>

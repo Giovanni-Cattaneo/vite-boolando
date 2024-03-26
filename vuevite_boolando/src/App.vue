@@ -6,7 +6,7 @@ import appFooter from "./components/appFooter.vue";
 export default {
   name: 'App',
   components: {
-    appHeader,
+    appHeader, //richiamiamo i componenti con import, li dichiariamo nei component e poi li utilizziamo in template
     appMain,
     appFooter,
   }

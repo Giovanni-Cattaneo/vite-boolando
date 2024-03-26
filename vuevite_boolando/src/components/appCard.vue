@@ -19,7 +19,8 @@ export default {
 
 <template>
     <div>
-        <!-- aggiungendoi emit qui l'immagine cambia solo se clicchiamo sull'immagine e non su tutta la card, molto meglio ora -->
+        <!-- aggiungendoi emit qui l'immagine cambia solo se clicchiamo sull'immagine e 
+            non su tutta la card, molto meglio ora -->
         <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage')">
         <div class="card-body">
             <div class="heart">&hearts;</div>
@@ -34,7 +35,8 @@ export default {
     </div>
 </template>
 
-<!-- Scoped vuol dire che il css scritto qua è limitato a questo componente -->
+<!-- Scoped vuol dire che il css scritto qua è limitato a questo componente, 
+    ci serve perchè solo le immagini nelle card abbiano queste proprietà -->
 <style scoped lang="scss">
 .card {
     position: relative;

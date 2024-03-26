@@ -45,6 +45,7 @@ export default {
                 <img src="../assets/boolean-logo.png" alt="" width="25%">
             </div>
             <div>
+                <!-- Problemi nel ciclare le i fa solid di font awesome me le riporta come semplice testo, approfondire -->
                 <a href=""><i class="fa-solid fa-user-plus"></i></a>
                 <a href=""><i class="fa-regular fa-heart"></i></a>
                 <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
