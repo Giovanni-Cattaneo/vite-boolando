@@ -12,8 +12,8 @@
         },
         {
             "id": 2,
-            "brand": "Levis",
-            "model": "RELAXED FEET TEE UNISEX",
+            "brand": "Guess",
+            "model": "Roses Tee",
             "price": 14.99,
             "altPrice": 7,
             "image": "../public/2.webp",
@@ -22,8 +22,8 @@
         },
         {
             "id": 3,
-            "brand": "Levis",
-            "model": "RELAXED FEET TEE UNISEX",
+            "brand": "Come zucchero filato",
+            "model": "Voglia di colori pastello",
             "price": 14.99,
             "altPrice": 7,
             "image": "../public/3.webp",
@@ -33,7 +33,7 @@
         {
             "id": 4,
             "brand": "Levis",
-            "model": "RELAXED FEET TEE UNISEX",
+            "model": "TEE UNISEX",
             "price": 14.99,
             "altPrice": 7,
             "image": "../public/4.webp",
@@ -42,8 +42,8 @@
         },
         {
             "id": 5,
-            "brand": "Levis",
-            "model": "RELAXED FEET TEE UNISEX",
+            "brand": "Maya deluce",
+            "model": "Stripe Bodice",
             "price": 14.99,
             "altPrice": 7,
             "image": "../public/5.webp",
@@ -52,8 +52,8 @@
         },
         {
             "id": 6,
-            "brand": "Levis",
-            "model": "RELAXED FEET TEE UNISEX",
+            "brand": "Esprit",
+            "model": "Maglione Black",
             "price": 14.99,
             "altPrice": 7,
             "image": "../public/6.webp",
