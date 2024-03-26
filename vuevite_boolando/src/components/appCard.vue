@@ -20,7 +20,7 @@ export default {
 
 <template>
     <div>
-        <img :src="image" class="card-img-top" alt="...">
+        <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage')">
         <div class="card-body">
             <div class="heart">&hearts;</div>
             <div class="discount">50%</div>
