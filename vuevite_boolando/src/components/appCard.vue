@@ -1,4 +1,6 @@
 <script>
+import { state } from "../state.js"
+
 export default {
     name: 'appCard',
     props: ['brand', 'image', 'price', 'altPrice', 'model', 'altImage', 'originalimage'],
@@ -6,6 +8,7 @@ export default {
         return {
             activeImage: true,
             activeCard: null,
+            state
         }
     },
     methods: {
@@ -20,7 +23,7 @@ export default {
         <img :src="image" class="card-img-top" alt="...">
         <div class="card-body">
             <div class="heart">&hearts;</div>
-            <div class="discount">-50%</div>
+            <div class="discount">50%</div>
             <div class="sustainability">Sostenibilità</div>
             <p class="card-title">{{ brand }}</p>
             <p class="card-text"><strong>{{ model }}</strong></p>
