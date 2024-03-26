@@ -28,7 +28,8 @@ export default {
             <div class="discount">50%</div>
             <div class="sustainability">Sostenibilità</div>
             <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
-            <p class="card-title">{{ brand }}</p>
+            <p class="card-title" @click="$emit('showModal')">{{ brand }}</p>
+            <!-- Emettiamo verso app l'evento per far apparire la modale -->
             <p class="card-text"><strong>{{ model }}</strong></p>
             <span>{{ price }}</span>
             <span>{{ altPrice }}</span>
