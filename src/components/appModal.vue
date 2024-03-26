@@ -1,26 +1,36 @@
 <script>
+import { state } from "../state.js"
+
 export default {
     name: 'appModal',
+    data() {
+        return {
+            state,
+        }
+    }
 }
 
 </script>
 
 <template>
-    <div class="modal_head">
-        <h4>Ecco i dettagli del prodotto</h4>
+    <div id="modal" v-for="(product, index) in state.products">
+        <div class="modal_head">
+            <h4>Ecco i dettagli del prodotto</h4>
+        </div>
+        <div class="modal_body">
+            <p>{{ product.model }}</p>
+        </div>
+
     </div>
-    <div class="modal_body">
-        <ul>
-            <li>Brand</li>
-            <li>Modello</li>
-            <li>Sostenibile</li>
-            <li>Sconto</li>
-            <li>Origine</li>
-        </ul>
-    </div>
+
+
 </template>
 
 
 <style scoped lang="scss">
+appModal {
+    border: 1px solid;
+}
+
 /* @use '../assets/scss/partials/_header.scss'; */
 </style>
