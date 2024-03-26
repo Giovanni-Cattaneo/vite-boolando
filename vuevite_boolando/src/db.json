@@ -8,7 +8,17 @@
             "altPrice": 7.50,
             "image": "../public/1.webp",
             "altImage": "../public/1b.webp",
-            "originalImage": "../public/1.webp"
+            "originalImage": "../public/1.webp",
+            "badges": [
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                },
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                }
+            ]
         },
         {
             "id": 2,
@@ -18,7 +28,17 @@
             "altPrice": 7,
             "image": "../public/2.webp",
             "altImage": "../public/2b.webp",
-            "originalImage": "../public/2.webp"
+            "originalImage": "../public/2.webp",
+            "badges": [
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                },
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                }
+            ]
         },
         {
             "id": 3,
@@ -28,7 +48,17 @@
             "altPrice": 7,
             "image": "../public/3.webp",
             "altImage": "../public/3b.webp",
-            "originalImage": "../public/3.webp"
+            "originalImage": "../public/3.webp",
+            "badges": [
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                },
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                }
+            ]
         },
         {
             "id": 4,
@@ -38,7 +68,17 @@
             "altPrice": 7,
             "image": "../public/4.webp",
             "altImage": "../public/4b.webp",
-            "originalImage": "../public/4.webp"
+            "originalImage": "../public/4.webp",
+            "badges": [
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                },
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                }
+            ]
         },
         {
             "id": 5,
@@ -48,7 +88,17 @@
             "altPrice": 7,
             "image": "../public/5.webp",
             "altImage": "../public/5b.webp",
-            "originalImage": "../public/5.webp"
+            "originalImage": "../public/5.webp",
+            "badges": [
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                },
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                }
+            ]
         },
         {
             "id": 6,
@@ -58,7 +108,17 @@
             "altPrice": 7,
             "image": "../public/6.webp",
             "altImage": "../public/6b.webp",
-            "originalImage": "../public/6.webp"
+            "originalImage": "../public/6.webp",
+            "badges": [
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                },
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                }
+            ]
         }
     ]
 }
