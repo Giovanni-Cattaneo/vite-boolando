@@ -1,14 +1,13 @@
 <script>
 import { state } from "../state.js"
+// todo! importiamo state anche in questo componnte singolo per evitare le props, 
 
 export default {
     name: 'appCard',
     props: ['brand', 'image', 'price', 'altPrice', 'model', 'altImage', 'originalimage'],
     data() {
         return {
-            activeImage: true,
-            activeCard: null,
-            state
+            state // solo state oppure state: state è equivalente
         }
     },
     methods: {
@@ -20,11 +19,13 @@ export default {
 
 <template>
     <div>
+        <!-- aggiungendoi emit qui l'immagine cambia solo se clicchiamo sull'immagine e non su tutta la card, molto meglio ora -->
         <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage')">
         <div class="card-body">
             <div class="heart">&hearts;</div>
             <div class="discount">50%</div>
             <div class="sustainability">Sostenibilità</div>
+            <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
             <p class="card-title">{{ brand }}</p>
             <p class="card-text"><strong>{{ model }}</strong></p>
             <span>{{ price }}</span>
@@ -33,6 +34,7 @@ export default {
     </div>
 </template>
 
+<!-- Scoped vuol dire che il css scritto qua è limitato a questo componente -->
 <style scoped lang="scss">
 .card {
     position: relative;
