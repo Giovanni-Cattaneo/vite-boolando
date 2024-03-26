@@ -11,6 +11,7 @@ export default {
     },
     data() {
         return {
+            reveal: false,
             products: [],
             state: state,
         }
@@ -25,6 +26,7 @@ export default {
         },
         showModal() {
             console.log("Hello world")
+            this.reveal = true
         }
 
     },
@@ -44,7 +46,7 @@ export default {
                     :index="index" @changeImage="updateImage(index)" @showModal="showModal()" />
                 <!-- Usiamo le props con product.props, ora con state da rimuovere, TODO! -->
             </div>
-            <appModal />
+            <appModal v-if="this.reveal" />
         </div>
     </div>
 </template>
