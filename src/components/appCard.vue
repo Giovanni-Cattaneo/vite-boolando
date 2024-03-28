@@ -29,13 +29,13 @@ export default {
         <!-- aggiungendoi emit qui l'immagine cambia solo se clicchiamo sull'immagine e 
             non su tutta la card, molto meglio ora -->
         <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage')">
-        <div class="card-body">
+        <div class="card-body" @click="showModal()">
             <div class="heart">&hearts;</div>
             <!-- TODO per discount e sustenability cercare di usare il v-for -->
             <div class="discount">50%</div>
             <div class="sustainability">Sostenibilità</div>
             <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
-            <p class="card-title" @click="showModal()">{{ brand }}</p>
+            <p class="card-title">{{ brand }}</p>
             <!-- Emettiamo verso app l'evento per far apparire la modale -->
             <p class="card-text"><strong>{{ model }}</strong></p>
             <span>{{ price }}</span>
