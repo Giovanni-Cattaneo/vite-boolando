@@ -42,7 +42,7 @@ export default {
             <span>{{ altPrice }}</span>
         </div>
     </div>
-    <div id="modal" v-show="this.reveal">
+    <div id="modal" v-if="this.reveal === true">
         <div class="modal_head">
             <h4>Ecco i dettagli del prodotto</h4>
             <button class="close" @click="removeModal()">x</button>
