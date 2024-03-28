@@ -25,11 +25,11 @@ export default {
                 state.products[index].image = state.products[index].originalImage
             }
         },
-        showModal(index) {
-            this.activemodal = index
-            console.log(this.activemodal);
-            this.reveal = true
-        }
+        // showModal(index) {
+        //     this.activemodal = index
+        //     console.log(this.activemodal);
+        //     this.reveal = true
+        // }
 
     },
     mounted() {
@@ -48,7 +48,7 @@ export default {
                     :index="index" @changeImage="updateImage(index)" @showModal="showModal(index)" />
                 <!-- Usiamo le props con product.props, ora con state da rimuovere, TODO! -->
             </div>
-            <appModal v-if="this.reveal" />
+            <appModal />
         </div>
     </div>
 </template>

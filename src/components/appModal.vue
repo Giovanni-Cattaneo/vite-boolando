@@ -13,16 +13,6 @@ export default {
 </script>
 
 <template>
-    <div id="modal" v-for="(product, index) in state.products">
-        <div class="modal_head">
-            <h4>Ecco i dettagli del prodotto</h4>
-        </div>
-        <div class="modal_body">
-            <p>{{ product.model[index] }}</p>
-        </div>
-
-    </div>
-
 
 </template>
 

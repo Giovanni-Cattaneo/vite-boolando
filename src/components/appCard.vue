@@ -4,6 +4,7 @@ import { state } from "../state.js"
 
 export default {
     name: 'appCard',
+    reveal: false,
     props: ['brand', 'image', 'price', 'altPrice', 'model', 'altImage', 'originalimage'],
     data() {
         return {
@@ -11,6 +12,12 @@ export default {
         }
     },
     methods: {
+        showModal() {
+            this.reveal = true
+        },
+        removeModal() {
+            this.reveal = false
+        }
     }
 }
 
@@ -28,12 +35,25 @@ export default {
             <div class="discount">50%</div>
             <div class="sustainability">Sostenibilità</div>
             <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
-            <p class="card-title" @click="$emit('showModal')">{{ brand }}</p>
+            <p class="card-title" @click="showModal()">{{ brand }}</p>
             <!-- Emettiamo verso app l'evento per far apparire la modale -->
             <p class="card-text"><strong>{{ model }}</strong></p>
             <span>{{ price }}</span>
             <span>{{ altPrice }}</span>
         </div>
+    </div>
+    <div id="modal" v-show="this.reveal">
+        <div class="modal_head">
+            <h4>Ecco i dettagli del prodotto</h4>
+            <button class="close" @click="removeModal()">x</button>
+        </div>
+        <div class="modal_body">
+            <p>{{ brand }}</p>
+            <p>{{ model }}</p>
+            <p>{{ price }}</p>
+            <p>{{ altPrice }}</p>
+        </div>
+
     </div>
 </template>
 
@@ -78,6 +98,30 @@ export default {
         font-size: 1.7rem;
     }
 
+    #modal {
+
+        & h4 {
+            color: black;
+        }
+
+        color: white;
+        position: absolute;
+        left: 0.5rem;
+        top: 7rem;
+        background-color: rgba(128, 128, 128, 0.473);
+        padding: 0.8rem;
+
+        .close {
+            color: red;
+            position: absolute;
+            top: 0.2rem;
+            right: 0.2rem;
+            border: none;
+            padding: 0 0.2rem;
+            border-radius: 2rem;
+            background-color: transparent;
+        }
+    }
 
 
 }
