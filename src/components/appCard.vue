@@ -4,7 +4,7 @@ import { state } from "../state.js"
 
 export default {
     name: 'appCard',
-    props: ['brand', 'image', 'price', 'altPrice', 'model', 'altImage', 'originalimage'],
+    props: ['brand', 'image', 'price', 'altPrice', 'model', 'altImage', 'originalimage', 'taglie'],
     data() {
         return {
             reveal: false,
@@ -52,7 +52,7 @@ export default {
                 <p>Modello: {{ model }}</p>
                 <p>Prezzo Intero: {{ price }}$</p>
                 <p>Prezzo scontato {{ altPrice }}$</p>
-                <p>Taglie disponibili: </p>
+                <p>Taglie disponibili: {{ taglie }}</p>
             </div>
         </div>
     </div>
