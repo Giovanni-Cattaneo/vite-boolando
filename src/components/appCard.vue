@@ -4,10 +4,10 @@ import { state } from "../state.js"
 
 export default {
     name: 'appCard',
-    reveal: false,
     props: ['brand', 'image', 'price', 'altPrice', 'model', 'altImage', 'originalimage'],
     data() {
         return {
+            reveal: false,
             state // solo state oppure state: state è equivalente
         }
     },
@@ -41,19 +41,18 @@ export default {
             <span>{{ price }}</span>
             <span>{{ altPrice }}</span>
         </div>
-    </div>
-    <div id="modal" v-if="this.reveal === true">
-        <div class="modal_head">
-            <h4>Ecco i dettagli del prodotto</h4>
-            <button class="close" @click="removeModal()">x</button>
+        <div id="modal" v-if="reveal">
+            <div class="modal_head">
+                <h4>Ecco i dettagli del prodotto</h4>
+                <button class="close" @click="removeModal()">x</button>
+            </div>
+            <div class="modal_body">
+                <p>{{ brand }}</p>
+                <p>{{ model }}</p>
+                <p>{{ price }}</p>
+                <p>{{ altPrice }}</p>
+            </div>
         </div>
-        <div class="modal_body">
-            <p>{{ brand }}</p>
-            <p>{{ model }}</p>
-            <p>{{ price }}</p>
-            <p>{{ altPrice }}</p>
-        </div>
-
     </div>
 </template>
 

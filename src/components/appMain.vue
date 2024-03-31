@@ -11,7 +11,6 @@ export default {
     },
     data() {
         return {
-            reveal: false,
             activemodal: 0,
             products: [],
             state: state,
