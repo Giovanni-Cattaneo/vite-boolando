@@ -100,14 +100,14 @@ export default {
     #modal {
 
         & h4 {
-            color: black;
+            color: antiquewhite;
         }
 
-        color: black;
+        color: antiquewhite;
         position: absolute;
         width: 100%;
         top: 9rem;
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.685);
         padding: 0.8rem;
         border-radius: 1rem;
 
