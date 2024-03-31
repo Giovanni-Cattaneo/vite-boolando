@@ -47,10 +47,10 @@ export default {
                 <button class="close" @click="removeModal()">x</button>
             </div>
             <div class="modal_body">
-                <p>{{ brand }}</p>
-                <p>{{ model }}</p>
-                <p>{{ price }}</p>
-                <p>{{ altPrice }}</p>
+                <p>Brand: {{ brand }}</p>
+                <p>Modello: {{ model }}</p>
+                <p>Prezzo Intero: {{ price }}$</p>
+                <p>Prezzo scontato {{ altPrice }}$</p>
             </div>
         </div>
     </div>
