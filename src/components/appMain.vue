@@ -11,6 +11,7 @@ export default {
     },
     data() {
         return {
+            favourites: [],
             activemodal: 0,
             products: [],
             state: state,
@@ -24,6 +25,10 @@ export default {
                 state.products[index].image = state.products[index].originalImage
             }
         },
+        addProduct() {
+            this.favourites.push(this.product)
+            console.log(this.favourites);
+        }
         // showModal(index) {
         //     this.activemodal = index
         //     console.log(this.activemodal);
@@ -44,7 +49,8 @@ export default {
             <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="(product, index) in state.products" :key="index">
                 <appCard :brand="product.brand" :image="product.image" :price="product.price" :model="product.model"
                     :altImage="product.altImage" :originalImage="product.originalImage" :altPrice="product.altPrice"
-                    :index="index" :taglie="product.taglie" @changeImage="updateImage(index)" />
+                    :index="index" :taglie="product.taglie" @changeImage="updateImage(index)"
+                    @addFavourites="addProduct()" />
                 <!-- Usiamo le props con product.props, ora con state da rimuovere, TODO! -->
             </div>
             <appModal />

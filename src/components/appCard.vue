@@ -34,7 +34,7 @@ export default {
         <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage')">
         <div>
             <div class="card-body" @click="showModal()">
-                <div class="heart" @click="addFavourites()">&hearts;</div>
+                <div class="heart" @click="$emit('addFavourites')">&hearts;</div>
                 <!-- TODO per discount e sustenability cercare di usare il v-for -->
                 <div class="discount">50%</div>
                 <div class="sustainability">Sostenibilità</div>
