@@ -30,11 +30,17 @@ export default {
             non su tutta la card, molto meglio ora -->
         <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage'), showModal()">
         <div>
-            <div class="heart">&hearts;</div>
-            <!-- TODO per discount e sustenability cercare di usare il v-for -->
-            <div class="discount">50%</div>
-            <div class="sustainability">Sostenibilità</div>
-            <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
+            <div class="card-body">
+                <div class="heart">&hearts;</div>
+                <!-- TODO per discount e sustenability cercare di usare il v-for -->
+                <div class="discount">50%</div>
+                <div class="sustainability">Sostenibilità</div>
+                <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
+                <h5>{{ brand }}</h5>
+                <p>{{ price }}$</p>
+
+            </div>
+
         </div>
         <div id="modal" v-if="reveal">
             <div class="modal_head">
@@ -70,7 +76,7 @@ export default {
         background-color: red;
         padding: 3px 5px;
         color: white;
-        bottom: 18%;
+        bottom: 24%;
         left: 0;
     }
 
@@ -79,7 +85,7 @@ export default {
         background-color: green;
         color: white;
         padding: 3px 5px;
-        bottom: 18%;
+        bottom: 24%;
         left: 15%;
     }
 
