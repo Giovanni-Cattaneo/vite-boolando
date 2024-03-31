@@ -103,12 +103,13 @@ export default {
             color: black;
         }
 
-        color: white;
+        color: black;
         position: absolute;
-        left: 0.5rem;
-        top: 7rem;
-        background-color: rgba(128, 128, 128, 0.473);
+        width: 100%;
+        top: 9rem;
+        background-color: rgb(255, 255, 255);
         padding: 0.8rem;
+        border-radius: 1rem;
 
         .close {
             color: red;
