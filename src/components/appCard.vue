@@ -54,7 +54,8 @@ export default {
                 <p>Prezzo Intero: {{ price }}$</p>
                 <p>Prezzo scontato {{ altPrice }}$</p>
                 <p>Taglie disponibili: {{ taglie }}</p>
-                <p>Per informazioni sulla spedizioni rfarsi alle nostre cndizioni di utlizzo e spedizione internazioli
+                <p>Per informazioni sulla spedizioni rifarsi alle nostre condizioni di utilizzo e spedizione
+                    internazioli
                     cliccando <a href="">qui</a></p>
             </div>
         </div>
@@ -129,6 +130,7 @@ export default {
         .close {
             color: red;
             position: absolute;
+            font-size: 1.2rem;
             top: 0.2rem;
             right: 0.2rem;
             border: none;

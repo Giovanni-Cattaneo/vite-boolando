@@ -2,7 +2,7 @@
     "products": [
         {
             "id": 1,
-            "brand": "Levis",
+            "brand": "Levi's",
             "model": "RELAXED FEET TEE UNISEX",
             "price": 14.99,
             "altPrice": 7.50,
@@ -36,10 +36,10 @@
             "altImage": "../public/2b.webp",
             "originalImage": "../public/2.webp",
             "taglie": [
-                "S",
-                "M",
-                "L",
-                "XL"
+                46,
+                48,
+                50,
+                52
             ],
             "badges": [
                 {
@@ -62,10 +62,10 @@
             "altImage": "../public/3b.webp",
             "originalImage": "../public/3.webp",
             "taglie": [
-                "S",
-                "M",
-                "L",
-                "XL"
+                46,
+                48,
+                50,
+                52
             ],
             "badges": [
                 {
@@ -80,7 +80,7 @@
         },
         {
             "id": 4,
-            "brand": "Levis",
+            "brand": "Levi's",
             "model": "TEE UNISEX",
             "price": 14.99,
             "altPrice": 7,
@@ -114,10 +114,10 @@
             "altImage": "../public/5b.webp",
             "originalImage": "../public/5.webp",
             "taglie": [
-                "S",
-                "M",
-                "L",
-                "XL"
+                46,
+                48,
+                50,
+                52
             ],
             "badges": [
                 {
