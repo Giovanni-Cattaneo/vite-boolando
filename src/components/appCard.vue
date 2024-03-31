@@ -55,7 +55,7 @@ export default {
                 <p>Prezzo scontato {{ altPrice }}$</p>
                 <p>Taglie disponibili: {{ taglie }}</p>
                 <p>Per informazioni sulla spedizioni rifarsi alle nostre condizioni di utilizzo e spedizione
-                    internazioli
+                    internazionali
                     cliccando <a href="">qui</a></p>
             </div>
         </div>
