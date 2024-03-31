@@ -28,16 +28,17 @@ export default {
     <div>
         <!-- aggiungendoi emit qui l'immagine cambia solo se clicchiamo sull'immagine e 
             non su tutta la card, molto meglio ora -->
-        <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage'), showModal()">
+        <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage')">
         <div>
-            <div class="card-body">
+            <div class="card-body" @click="showModal()">
                 <div class="heart">&hearts;</div>
                 <!-- TODO per discount e sustenability cercare di usare il v-for -->
                 <div class="discount">50%</div>
                 <div class="sustainability">Sostenibilità</div>
                 <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
                 <h5>{{ brand }}</h5>
-                <p>{{ price }}$</p>
+                <span class="price">{{ price }}$</span>
+                <span class="realPrice">{{ altPrice }}$</span>
 
             </div>
 
@@ -53,6 +54,8 @@ export default {
                 <p>Prezzo Intero: {{ price }}$</p>
                 <p>Prezzo scontato {{ altPrice }}$</p>
                 <p>Taglie disponibili: {{ taglie }}</p>
+                <p>Per informazioni sulla spedizioni rfarsi alle nostre cndizioni di utlizzo e spedizione internazioli
+                    cliccando <a href="">qui</a></p>
             </div>
         </div>
     </div>
@@ -90,6 +93,16 @@ export default {
         left: 15%;
     }
 
+    .price {
+        text-decoration: line-through;
+        margin-right: 1rem;
+        color: red;
+    }
+
+    .realPrice {
+        color: rgb(0, 161, 0);
+    }
+
     .heart {
         position: absolute;
         background-color: lightgray;
@@ -108,7 +121,7 @@ export default {
         color: antiquewhite;
         position: absolute;
         width: 100%;
-        top: 9rem;
+        top: 5rem;
         background-color: rgba(0, 0, 0, 0.685);
         padding: 0.8rem;
         border-radius: 1rem;
