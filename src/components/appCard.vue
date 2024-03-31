@@ -52,6 +52,7 @@ export default {
                 <p>Modello: {{ model }}</p>
                 <p>Prezzo Intero: {{ price }}$</p>
                 <p>Prezzo scontato {{ altPrice }}$</p>
+                <p>Taglie disponibili: </p>
             </div>
         </div>
     </div>

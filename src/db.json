@@ -9,6 +9,12 @@
             "image": "../public/1.webp",
             "altImage": "../public/1b.webp",
             "originalImage": "../public/1.webp",
+            "taglie": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
             "badges": [
                 {
                     "type": "tag",
@@ -29,6 +35,12 @@
             "image": "../public/2.webp",
             "altImage": "../public/2b.webp",
             "originalImage": "../public/2.webp",
+            "taglie": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
             "badges": [
                 {
                     "type": "tag",
@@ -49,6 +61,12 @@
             "image": "../public/3.webp",
             "altImage": "../public/3b.webp",
             "originalImage": "../public/3.webp",
+            "taglie": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
             "badges": [
                 {
                     "type": "tag",
@@ -69,6 +87,12 @@
             "image": "../public/4.webp",
             "altImage": "../public/4b.webp",
             "originalImage": "../public/4.webp",
+            "taglie": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
             "badges": [
                 {
                     "type": "tag",
@@ -89,6 +113,12 @@
             "image": "../public/5.webp",
             "altImage": "../public/5b.webp",
             "originalImage": "../public/5.webp",
+            "taglie": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
             "badges": [
                 {
                     "type": "tag",
@@ -109,6 +139,12 @@
             "image": "../public/6.webp",
             "altImage": "../public/6b.webp",
             "originalImage": "../public/6.webp",
+            "taglie": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
             "badges": [
                 {
                     "type": "tag",
