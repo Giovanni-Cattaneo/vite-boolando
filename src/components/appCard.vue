@@ -43,7 +43,7 @@ export default {
                 <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
                 <h5>{{ brand }}</h5>
                 <span class="price">{{ price }}$</span>
-                <span class="realPrice">{{ (price * discount).toFixed(2) }}$</span>
+                <span class="realPrice" v-if="discount !== 0">{{ (price * discount).toFixed(2) }}$</span>
 
             </div>
 

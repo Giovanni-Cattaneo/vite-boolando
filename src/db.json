@@ -31,7 +31,7 @@
             "brand": "Guess",
             "model": "Roses Tee",
             "price": 34.99,
-            "discount": 0.5,
+            "discount": 0.7,
             "image": "../public/2.webp",
             "altImage": "../public/2b.webp",
             "originalImage": "../public/2.webp",
@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "discount",
-                    "value": "-50%"
+                    "value": "-30%"
                 }
             ]
         },
@@ -57,7 +57,7 @@
             "brand": "Come zucchero filato",
             "model": "Voglia di colori pastello",
             "price": 69.99,
-            "discount": 0.5,
+            "discount": 0.8,
             "image": "../public/3.webp",
             "altImage": "../public/3b.webp",
             "originalImage": "../public/3.webp",
@@ -69,12 +69,8 @@
             ],
             "badges": [
                 {
-                    "type": "tag",
-                    "value": "Sostenibilità"
-                },
-                {
                     "type": "discount",
-                    "value": "-50%"
+                    "value": "-20%"
                 }
             ]
         },
@@ -83,7 +79,7 @@
             "brand": "Levi's",
             "model": "TEE UNISEX",
             "price": 12.99,
-            "discount": 0.5,
+            "discount": 0.4,
             "image": "../public/4.webp",
             "altImage": "../public/4b.webp",
             "originalImage": "../public/4.webp",
@@ -100,7 +96,7 @@
                 },
                 {
                     "type": "discount",
-                    "value": "-50%"
+                    "value": "-60%"
                 }
             ]
         },
@@ -109,7 +105,7 @@
             "brand": "Maya deluce",
             "model": "Stripe Bodice",
             "price": 29.99,
-            "discount": 0.5,
+            "discount": 0.9,
             "image": "../public/5.webp",
             "altImage": "../public/5b.webp",
             "originalImage": "../public/5.webp",
@@ -121,12 +117,8 @@
             ],
             "badges": [
                 {
-                    "type": "tag",
-                    "value": "Sostenibilità"
-                },
-                {
                     "type": "discount",
-                    "value": "-50%"
+                    "value": "-10%"
                 }
             ]
         },
@@ -135,7 +127,7 @@
             "brand": "Esprit",
             "model": "Maglione Black",
             "price": 24.99,
-            "discount": 0.5,
+            "discount": 0.45,
             "image": "../public/6.webp",
             "altImage": "../public/6b.webp",
             "originalImage": "../public/6.webp",
@@ -152,7 +144,7 @@
                 },
                 {
                     "type": "discount",
-                    "value": "-50%"
+                    "value": "-55%"
                 }
             ]
         }
