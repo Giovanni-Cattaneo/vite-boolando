@@ -49,7 +49,7 @@ export default {
             <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="(product, index) in state.products" :key="index">
                 <appCard :brand="product.brand" :image="product.image" :price="product.price" :model="product.model"
                     :altImage="product.altImage" :originalImage="product.originalImage" :discount="product.discount"
-                    :index="index" :taglie="product.taglie" @changeImage="updateImage(index)"
+                    :index="index" :badges="product.badges" :taglie="product.taglie" @changeImage="updateImage(index)"
                     @addFavourites="addProduct()" />
                 <!-- Usiamo le props con product.props, ora con state da rimuovere, TODO! -->
             </div>

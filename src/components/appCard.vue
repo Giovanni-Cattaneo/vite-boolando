@@ -4,7 +4,7 @@ import { state } from "../state.js"
 
 export default {
     name: 'appCard',
-    props: ['brand', 'image', 'price', 'discount', 'model', 'altImage', 'originalimage', 'taglie'],
+    props: ['brand', 'image', 'price', 'discount', 'model', 'altImage', 'originalimage', 'taglie', 'badges'],
     data() {
         return {
             reveal: false,
@@ -36,8 +36,10 @@ export default {
             <div class="card-body" @click="showModal()">
                 <div class="heart" @click="$emit('addFavourites')">&hearts;</div>
                 <!-- TODO per discount e sustenability cercare di usare il v-for -->
-                <div class="discount">50%</div>
-                <div class="sustainability">Sostenibilità</div>
+                <div v-for="badge in badges">
+                    <div class="sustainability" v-if="badge.type === 'tag'">{{ badge.value }}</div>
+                    <div class="discount" v-if="badge.type === 'discount'">{{ badge.value }}</div>
+                </div>
                 <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
                 <h5>{{ brand }}</h5>
                 <span class="price">{{ price }}$</span>
