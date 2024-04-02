@@ -114,6 +114,10 @@ export default {
         font-size: 1.7rem;
     }
 
+    .red {
+        color: red;
+    }
+
     #modal {
 
         & h4 {
