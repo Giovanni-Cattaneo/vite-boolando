@@ -41,7 +41,7 @@ export default {
                 <!-- utiizziamo le props coem variabili per l'inserimento nelle card -->
                 <h5>{{ brand }}</h5>
                 <span class="price">{{ price }}$</span>
-                <span class="realPrice">{{ altPrice }}$</span>
+                <span class="realPrice">{{ (price / 2).toFixed(2) }}$</span>
 
             </div>
 
@@ -55,7 +55,7 @@ export default {
                 <p>Brand: {{ brand }}</p>
                 <p>Modello: {{ model }}</p>
                 <p>Prezzo Intero: {{ price }}$</p>
-                <p>Prezzo scontato {{ altPrice }}$</p>
+                <p>Prezzo scontato {{ (price / 2).toFixed(2) }}$</p>
                 <p>Taglie disponibili: {{ taglie }}</p>
                 <p>Per informazioni sulla spedizioni rifarsi alle nostre condizioni di utilizzo e spedizione
                     internazionali
