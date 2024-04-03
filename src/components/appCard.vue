@@ -50,7 +50,7 @@ export default {
             </div>
 
         </div>
-        <div id="modal" v-if="reveal">
+        <div id="modal" v-show="reveal">
             <div class="modal_head">
                 <h4>Ecco i dettagli del prodotto</h4>
                 <button class="close" @click="removeModal()">x</button>
