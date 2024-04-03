@@ -8,6 +8,7 @@ export default {
     data() {
         return {
             reveal: false,
+            isFavourites: false,
             state // solo state oppure state: state è equivalente
         }
     },
@@ -20,6 +21,7 @@ export default {
         },
         addFavourites() {
             // per adesso mettiamo solo dellos tile per farlo apparire rosso, aggiungeremo anche l'aggiunta ad un array esterna di preferiti
+            this.isFavourites = true
         }
     }
 }
@@ -34,7 +36,7 @@ export default {
         <img :src="image" class="card-img-top" alt="..." @click="$emit('changeImage')">
         <div>
             <div class="card-body" @click="showModal()">
-                <div class="heart" @click="$emit('addFavourites')">&hearts;</div>
+                <div class="heart" :class="{ red: isFavourites }" @click="addFavourites()">&hearts;</div>
                 <!-- TODO per discount e sustenability cercare di usare il v-for -->
                 <div v-for="badge in badges">
                     <div class="sustainability" v-if="badge.type === 'tag'">{{ badge.value }}</div>
@@ -112,6 +114,7 @@ export default {
         top: 2%;
         right: 0;
         font-size: 1.7rem;
+        cursor: pointer;
     }
 
     .red {
